@@ -5,5 +5,7 @@
 
 
     <color name="Red">#CCFF0000</color>
-    <color name="darkBlue">#030B42</color>
+    <color name="darkBlue">#00041F</color>
+    <color name="Blue">#CC020B4E</color>
+    <color name="Orenj">#FF5722</color>
 </resources>

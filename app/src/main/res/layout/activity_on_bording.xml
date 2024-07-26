@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/sliderimg"
         android:layout_marginTop="25sp"
-        android:text="@string/title"
+        android:text="Welcome to Fitness Kit"
         android:textSize="30sp"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -36,6 +36,7 @@
         android:layout_marginEnd="30dp"
         android:layout_marginStart="30dp"
         android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/Red"
         android:clickable="true"
         android:focusable="true"
         android:foreground="?attr/selectableItemBackground"
@@ -47,6 +48,7 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:textStyle="bold"
+            android:textColor="@color/white"
             android:layout_gravity="center"
             android:text="Log in"/>
 

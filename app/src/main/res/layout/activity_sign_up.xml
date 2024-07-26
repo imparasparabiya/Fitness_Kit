@@ -13,6 +13,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="100sp"
             android:text="Sing Up"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textSize="28sp" />
 
@@ -122,12 +123,12 @@
             android:layout_width="48sp"
             android:layout_height="48dp"
             android:src="@drawable/fb"
-            android:layout_marginStart="10dp"/>
+            android:layout_marginStart="20dp"/>
         <ImageView
             android:layout_width="48sp"
             android:layout_height="48dp"
             android:src="@drawable/twitter"
-            android:layout_marginStart="10dp"/>
+            android:layout_marginStart="20dp"/>
 
     </LinearLayout>
 

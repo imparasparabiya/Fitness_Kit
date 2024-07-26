@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/layouttitle"
         android:layout_marginTop="15sp"
-        android:text="Welcome"
+        android:text="@string/welcome"
         android:textAlignment="center"
         android:textSize="28sp" />
 
@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/edtuserid"
         app:boxCornerRadiusBottomStart="15sp"
-        android:layout_marginTop="15sp"
+        android:layout_marginTop="25sp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         app:boxCornerRadiusTopEnd="15sp">
@@ -85,7 +85,7 @@
         android:id="@+id/layout2"
         android:layout_below="@id/edtpass"
         android:gravity="center"
-        android:layout_marginTop="25sp">
+        android:layout_marginTop="50dp">
 
     <LinearLayout
         android:layout_width="150dp"
