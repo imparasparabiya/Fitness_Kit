@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".OnBordingActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/img"
+        android:layout_marginTop="100sp"
+        android:id="@+id/sliderimg"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sliderimg"
+        android:layout_marginTop="25sp"
+        android:text="@string/title"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nextcardbtn"
+        android:layout_width="200sp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="60dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardCornerRadius="28dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:text="Log in"/>
+
+        <ImageView
+            android:id="@+id/btnArrow"
+            android:layout_width="56sp"
+            android:layout_gravity="center|end"
+            android:layout_height="match_parent"
+            android:layout_margin="17dp"
+            android:src="@drawable/arrow_forward"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

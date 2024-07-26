@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+        <TextView
+            android:id="@+id/txtsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100sp"
+            android:text="Sing Up"
+            android:textAlignment="center"
+            android:textSize="28sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtsignup"
+        app:boxCornerRadiusBottomStart="15sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxCornerRadiusTopEnd="15sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtusername"
+        app:boxCornerRadiusBottomStart="15sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15sp"
+        app:boxCornerRadiusTopEnd="15sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtemail"
+        app:boxCornerRadiusBottomStart="15sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxCornerRadiusTopEnd="15sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contect" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtphone"
+        app:boxCornerRadiusBottomStart="15sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxCornerRadiusTopEnd="15sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="200sp"
+        android:layout_height="46dp"
+        android:id="@+id/btnsignup"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/edtpass"
+        android:layout_marginTop="25sp"
+        android:gravity="center"
+        android:background="@drawable/round_back_btn_home">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sing Up"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/btnsignup"
+        android:layout_marginTop="25sp">
+
+        <ImageView
+            android:layout_width="48sp"
+            android:layout_height="48dp"
+            android:src="@drawable/google"/>
+
+        <ImageView
+            android:layout_width="48sp"
+            android:layout_height="48dp"
+            android:src="@drawable/fb"
+            android:layout_marginStart="10dp"/>
+        <ImageView
+            android:layout_width="48sp"
+            android:layout_height="48dp"
+            android:src="@drawable/twitter"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

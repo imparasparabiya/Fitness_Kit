@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LogInActivity">
+
+    <LinearLayout
+        android:id="@+id/layouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Fitness"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:text="Kit"
+            android:textColor="@color/Red"
+            android:textSize="32dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtwel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layouttitle"
+        android:layout_marginTop="15sp"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textSize="28sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtuserid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtwel"
+        app:boxCornerRadiusBottomStart="15sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxCornerRadiusTopEnd="15sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtuserid"
+        app:boxCornerRadiusBottomStart="15sp"
+        android:layout_marginTop="15sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxCornerRadiusTopEnd="15sp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        android:layout_below="@id/edtpass"
+        android:gravity="center"
+        android:layout_marginTop="25sp">
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        android:id="@+id/btnlogin"
+        android:layout_below="@id/edtpass"
+        android:gravity="center"
+        android:background="@drawable/round_back_btn_home">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="46dp"
+        android:id="@+id/btnsignup"
+        android:layout_marginStart="20dp"
+        android:gravity="center"
+        android:background="@drawable/round_back_btn_home">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sing Up"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_below="@id/layout2"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>
