@@ -1,4 +1,4 @@
-package com.example.fitnesskit;
+package com.example.fitnesskit.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +11,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.fitnesskit.R;
 import com.example.fitnesskit.databinding.ActivitySpleshScreenBinding;
 
 public class SpleshScreenActivity extends AppCompatActivity {
